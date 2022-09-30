@@ -1,0 +1,213 @@
+# MYSQL
+PROJECT
+create database IQRA;
+use IQRA;
+
+create table student(
+
+student_id int primary key,
+First_name varchar(255),
+Last_name varchar(255),
+Age int,
+Gender varchar(255),
+Addres varchar(255),
+Mobile int);
+
+select * from student;
+
+insert into student
+values
+(1,'iqra','dalvi',20,'Female','neral',90775424),
+(2,'muskan','ansari',22,'female','thane',66889900),
+(3,'iqra','rajput',22,'female','mumbra',90887766),
+(4,'kuttey','yesh',25,'male','thane',55556890),
+(5,'panu','raja',21,'male','kalwa',23654321),
+(6,'ram','shaikh',20,'male','mulund',34567654),
+(7,'asim','shaikh',24,'male','mumbra',45678543),
+(8,'tehseen','khan',22,'female','mumbra',78765678),
+(9,'rehan','kuttey',19,'male','kalyan',89096767),
+(10,'saad','shaikh',23,'male','kharghar',67767670),
+(11,'pinki','dalvi',22,'female','karghar',89098221),
+(12,'shahim','raja',20,'male','mumbra',67890432),
+(13,'shakil','sayyed',25,'male','taloja',96545666),
+(14,'suhail','murudkar',19,'male','airoli',92111122),
+(15,'farheen','dabur',18,'female','ghatkoper',72567890),
+(16,'asiya','kazi',25,'female','panvel',23456566),
+(17,'tehseen','choughly',19,'female','diva',99990099),
+(18,'rehan','ansari',18,'male','vikroli',90789065),
+(19,'shakila','dawed',20,'female','taloja',78907865),
+(20,'sonali','chaman',24,'female','nagpur',92224455),
+(21,'anil','patil',15,'male','panvel',67877789),
+(22,'junaid','rawoot',18,'male','bhandup',88990090),
+(23,'misba','patil',24,'female','parel',90884433),
+(24,'palak','urooj',18,'female','neral',87766554),
+(25,'sanskruti','thakre',19,'female','amrut nagar',95889900),
+(26,'komal','lala',24,'female','cst',91112234),
+(27,'ayesha','sharma',20,'male','parel',92366557),
+(28,'junaid','rawoot',18,'male','bhandup',78907456),
+(29,'roshan','turkey',22,'female','nagpur',89412345),
+(30,'roshani','parde',22,'female','nehrul',29076546),
+(31,'myasha','shaikh',18,'Female','diva',96541277),
+(32,'sanket','raut',20,'Female','kalya',76543124),
+(33,'jayesh','dalvi',20,'Female','mumbra',96543124),
+(34,'fadi','rajput',18,'Female','Thane',90443124),
+(35,'naddem','khan',21,'Female','kurla',92223124),
+(36,'mohsin','choudary',21,'Female','Thane',96761124),
+(37,'komal','patil',20,'Female','kalyan',93768884),
+(38,'kajal','rao',18,'Female','diva',88877788),
+(39,'rakhi','rajput',18,'Female','kolshet',98989897),
+(40,'mahira','khan',18,'Female','badlapur',80989078),
+(41,'sameer','qazi',18,'Female','cst',88776677),
+(42,'usra','ansari',18,'Female','Thane',90987890),
+(43,'priyanka','teli',18,'Female','Thane',90887722),
+(44,'saloni','saroj',18,'Female','Thane',88999765),
+(45,'siraj','turki',18,'Female','Thane',11110099),
+(46,'anhijeet','sharma',18,'Female','Thane',94568902),
+(47,'shokat','chpora',18,'Female','Thane',999887766),
+(48,'abbas','khan',18,'Female','Thane',92223344),
+(49,'roshni','walia',18,'Female','Thane',91111111),
+(50,'arsal','zubair',18,'Female','Thane',97009988);
+
+
+
+create table teacher(
+T_ID int PRIMARY KEY,
+first_name varchar(255),
+last_name varchar(255),
+email varchar(255),
+address varchar(255),
+salary int);
+
+
+select * from teacher;
+
+insert into teacher
+values 
+(1,'Sunita','Patil','sunitapatil@gmail.com','Mumbai',50000),
+(2,'Rashmi','Thakur','rashmithakur@gmail.com','Nahur',40000),
+(3,'Sonali','Shukla','sonalishukla@gmail.com','Neral',60000),
+(4,'Ranjeet','Varma','ranjeetvarma@gmail.com','Kalyan',50000),
+(5,'Priyanka','Dalvi','riyankadalvi@gmail.com','Bhandup',40000),
+(6,'Sulaim','Dalvi','sulaimdalvi@gmail.com','Panvel',80000),
+(7,'Priya','Kazi','riyakazi@gmail.com','Mumbra',350000),
+(8,'Rnjali','Mehta','anjalimehta@gmail.com','Ghatkoper',40000),
+(9,'Roshan','Khot','roshan khot@gmail.com','Thane',40000),
+(10,'Sunita','Barmare','sunitabarmare@gmail.com','Thane',45000),
+(11,'Taha','Nakhwa','tahanakhwa@gmail.com','Mumbra',30000),
+(12,'Sana','Chopra','sanachopra@gmail.com','Bhandup',60000),
+(13,'Sumaiya','kaif','sumaiyakaif@gmail.com','Diva',50000),
+(14,'Asiya','rawoot','asiyarawoot@gmail.com','Kalyan',40000),
+(15,'Asiya','Khan','asiyakhan@gmail.com','Badlapur',250000),
+(16,'Anjali','Kutla','anjalikutla@gmail.com','Kausa',20000),
+(17,'Sanskruti','Shaikh','sanskrutishaikh@gmail.com','Ambernath',25000),
+(18,'Muskan','Ansari','muskanmrudkar@gmail.com','Kalwa',55000),
+(19,'Iqra','Dalvi','iqradalvi@gmail.com','Mumbra',80000),
+(20,'Priyanka','Khot','priyankakhot@gmail.com','Vikroli',35000),
+(21,'Jyoti','Sroj','jyotisaroj@gmail.com','Mumbra',30000),
+(22,'Jiya','Chopra','jiyachopra@gmail.com','Bhandup',60000),
+(23,'Sana','kaif','sanakaif@gmail.com','Diva',50000),
+(24,'Asiya','Khan','asiyakhan@gmail.com','Kalyan',40000),
+(25,'Ayesha','Khan','ayeshakhan@gmail.com','Badlapur',250000),
+(26,'Anjali','Gupta','anjaligupta@gmail.com','Kausa',20000),
+(27,'Sameena','Shaikh','sameenashaikh@gmail.com','Ambernath',25000),
+(28,'Muskan','Altaf','muskanaltaf@gmail.com','Kalwa',55000),
+(29,'Anam','qazi','anamqazi@gmail.com','Mumbra',80000),
+(30,'Priyanka','rajput','priyankaraj@gmail.com','Vikroli',35000),
+(31,'Eram','Rao','eramrao@gmail.com','Thane',30000),
+(32,'Arsal','khan','arsalkhan@gmail.com','Thane',80000),
+(33,'Komal','Teli','komalteli@gmail.com','Diva',50000),
+(34,'Abdul','shaikh','abdulshaikh@gmail.com','Thane',40000),
+(35,'Azhar','Khan','azharkhan@gmail.com','Badlapur',250000),
+(36,'Arshi','shaikh','arshishaikh@gmail.com','Thane',20000),
+(37,'Sameena','Shaikh','sameenashaikh@gmail.com','Ambernath',25000),
+(38,'Mushtaq','Altaf','mushtaqaltaf@gmail.com','Kalwa',55000),
+(39,'Anam','khan','anamkhan@gmail.com','Mumbra',80000),
+(40,'Aliya','rajput','aliyaraj@gmail.com','Thane',35000),
+(41,'Rohit','Raj','rohitraj@gmail.com','Mumbai',80000),
+(42,'Mrunal','Thakur','mrunalthakur@gmail.com','Nahur',40000),
+(43,'Ayesha','Khan','ayeshakhan@gmail.com','Aroli',70000),
+(44,'Anam','Shaikh','anamshaikh@gmail.com','Mumbra',90000),
+(45,'Iram','Choudary','iramchoudary@gmail.com','Thane',80000),
+(46,'Kahakasha','Ansari','kahkashaansari@gmail.com','Thane',90000),
+(47,'Asiya','Khan','asiyakhan@gmail.com','Mumbai',90000),
+(48,'Umair','Shaikh','umairshaikh@gmail.com','Kausa',20000),
+(49,'Iqra','Dalvi','iqradalvi@gmail.com','Mumbra',80000),
+(50,'Priyanka','Khot','priyankakhot@gmail.com','Vikroli',35000);
+
+
+SELECT First_name,Last_name,age FROM student;
+
+SELECT First_name,Salary FROM Teacher;
+
+SELECT first_name,Last_name,Age FROM student LIMIT 20;
+
+SELECT first_name FROM student WHERE first_name ="iqra";
+
+SELECT first_name FROM student WHERE first_name like 'f%';
+
+SELECT last_name FROM student WHERE first_name like '%a' ;
+
+SELECT first_name FROM student WHERE first_name NOT like 'i%' ;
+
+SELECT first_name,Last_name,Age FROM student ORDER BY age desc ;
+
+SELECT first_name,last_name FROM teacher WHERE length(first_name)>5 ;
+
+SELECT student_id, substring(first_name,1,4)  , age from student ;
+
+SELECT student_id, substring(first_name,1,4) AS NAME , age from student ;
+
+SELECT * FROM Student WHERE age IN (20,21,22) ;
+
+SELECT lower(first_name) AS Fname, lower(last_name) AS Sname from teacher ;
+
+SELECT count(salary) FROM teacher WHERE address= 'mumbra';
+
+  SELECT student_id FROM student
+ UNION 
+ SELECT t_id FROM  teacher;
+ 
+ SELECT student_id FROM student
+ UNION ALL
+ SELECT t_id FROM  teacher;
+ 
+ SELECT student.student_id,
+student.first_name,student.last_name,
+teacher.salary
+FROM student
+RIGHT JOIN teacher
+ON student.student_id=teacher.t_id;
+
+SELECT student.student_id,
+student.first_name,student.last_name,
+teacher.salary
+FROM student
+LEFT JOIN teacher 
+ON student.student_id=teacher.t_id;
+
+ SELECT student.student_id,
+student.first_name,student.last_name,
+teacher.salary
+FROM student
+INNER JOIN teacher 
+ON student.student_id=teacher.t_id;
+
+
+ 
+
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+       
+       
